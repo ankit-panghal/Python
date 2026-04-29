@@ -73,3 +73,36 @@ sw1.begruessung()
 
 print(auto1 == auto4)'''
 
+
+#Composition-------------------------------------------------------------------
+#eine Klasse enthält andere Klassen als Attribute
+
+#Untershied : Vererbung (Inheritance) vs Komposition(Composition)
+#             Sportswagen (ist) ein Auto   Auto (hat) ein Musiksystem
+
+'''class Motor():
+    def __init__(self,ps):
+        self.ps = ps
+
+    def starten(self):
+        return f"Motor mit {self.ps} PS wird gestarted ....."
+    
+class Radio:
+  def abspielen(self, lied):
+    return f"Spiele: {lied}"
+
+
+class Auto():
+   def __init__(self,motor):
+       self.motor = Motor(motor)   #Auto hat Motor
+       self.radio = Radio()        #Auto hat Radio
+
+   def fahren(self):
+      motorMsg =  self.motor.starten()
+      musik =  self.radio.abspielen('Lil Uzi')
+      return f"{motorMsg}\n{musik}"
+a1 = Auto(200)
+
+print(a1.fahren())'''
+    
+
